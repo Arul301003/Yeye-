@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20thn</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        header, footer {
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #main-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .image-container {
+            position: relative;
+            margin-bottom: 40px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            max-width: 50%; /* Reducing the image width */
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 8px;
+        }
+
+        .overlay h2 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        #playButton {
+            background-color: #4A00E0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #playButton:hover {
+            background-color: #3700B3;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <br>
+            <h6>Scroll Paling Bawah, Klik Putar Musik</h6>
+        </br>     
+         Baca Pelan-pelan yhh :)
+     <br>
+            <h1>Selamat Ulang Tahun, Tri Lestari M. Koko</h1>
+    </br>
+    </header>
+
+    <div id="main-content">
+        <div class="image-container">
+            <img src="4.jpg" alt="Kenangan Bersama">
+        </div>
+        
+        <p>
+            Selamat ulang tahun yang ke 20 yh syggkuu. Semoga dengan bertambah ygg pung umur ni ygg selalu sehat panjang umur deng bahagia slalu e sygg :). Sygg, tetap jadi pribadi yg bae e klo bisa jadi yg lebih bae le syggkuu, ju ygg tetap jadi yeye yg bta kenal e. Sayang terus bta ygg ingat, jang kas kurang, klo bisa tambah na tambah ygg :). Owwiya jang lupa semangat ju yh syggkuu. Maaf e ygg, snd bisa ksi kado yg ygg mau. Hanya bisa ksi ygg doa sa ni. Ygg jang bosan e deng bta yg bgini sa ni, yg tukang bikin ygg emosi, darah tinggi, sariawan, panas dalam pokoknya semua yg bta pung jelek. Deng bta terus yh sygg. I love YOU so Much Tri Lestari Koko. Owwiya ygg terakhir, b pung acting gaga a. Tempat biasa kamar NO.7 :)
+        </p>
+
+        <div class="image-container">
+            <img src="6.jpg" alt="Kebersamaan">
+        </div>
+
+        <!-- Add more image containers as needed -->
+
+        <div class="image-container">
+            <audio id="myAudio" controls>
+                <source src="Gellen Martadinata - Selamat Ulang Tahun ( Unofficial Music Video & Lyric ).mp3" type="audio/mp3">
+                Browser Anda tidak mendukung tag audio.
+            </audio>
+        </div>
+
+        <button id="playButton">Putar Musik</button>
+
+        <p>
+            Jang lupa bilang amin sygg
+        </p>
+    </div>
+
+    <footer>
+        Dibuat dengan Cinta oleh Syahrul Dapubeang &copy; 2023
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById('myAudio');
+            var playButton = document.getElementById('playButton');
+
+            playButton.addEventListener('click', function() {
+                audio.play();
+                playButton.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
